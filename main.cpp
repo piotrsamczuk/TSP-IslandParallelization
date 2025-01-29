@@ -8,7 +8,7 @@
 #include <vector>
 
 // Parametry algorytmu
-const int num_cities = 100;
+const int num_cities = 200;
 const int num_islands = 8;
 const int population_size = 200;
 const int num_generations = 400;
@@ -258,14 +258,6 @@ int main()
     auto end_4 = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> elapsed_4 = end_4 - start_4;
     std::cout << "Czas wykonania dla 4 wątków: " << elapsed_4.count() << " s" << std::endl;
-
-    // Uruchomienie algorytmu dla 6 wątków
-    std::cout << "Uruchamianie dla 6 wątków..." << std::endl;
-    auto start_6 = std::chrono::high_resolution_clock::now();
-    run_algorithm(6);
-    auto end_6 = std::chrono::high_resolution_clock::now();
-    std::chrono::duration<double> elapsed_6 = end_6 - start_6;
-    std::cout << "Czas wykonania dla 6 wątków: " << elapsed_6.count() << " s" << std::endl;
 
     // Uruchomienie algorytmu dla 12 wątków
     std::cout << "Uruchamianie dla 12 wątków..." << std::endl;
