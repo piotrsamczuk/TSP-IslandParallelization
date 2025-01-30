@@ -63,10 +63,6 @@ def parse_results(filename):
         raise ValueError("No valid results were parsed from the file")
     
     print(f"Successfully parsed {len(results)} complete runs")
-    print("\nFirst run data:")
-    print("Thread counts:", list(results[0]['times'].keys()))
-    print("Execution times:", [f"{t:.2f}s" for t in results[0]['times'].values()])
-    
     return results
 
 def create_performance_graphs(results):

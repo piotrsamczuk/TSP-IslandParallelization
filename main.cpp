@@ -9,14 +9,15 @@
 
 // Parametry algorytmu
 const int num_cities = 200;
-const int num_islands = 8;
+const int num_islands = 12;
 const int population_size = 200;
-const int num_generations = 400;
+const int num_generations = 250;
 const int migration_interval = 10;
 const int migration_size = 10;
 
 // Parametry mutacji i selekcji dla każdej wyspy
 const std::vector<std::pair<double, int>> island_params = {{0.1, 10}, {0.2, 15}, {0.05, 5}, {0.15, 20},
+                                                           {0.1, 10}, {0.2, 15}, {0.05, 5}, {0.15, 20},
                                                            {0.1, 10}, {0.2, 15}, {0.05, 5}, {0.15, 20}};
 
 // Losowa generacja miast (na siatce 100x100)
